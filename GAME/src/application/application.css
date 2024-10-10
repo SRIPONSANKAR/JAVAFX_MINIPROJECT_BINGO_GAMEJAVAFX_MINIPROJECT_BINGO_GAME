@@ -1,0 +1,97 @@
+/* application.css */
+
+/* Set the background color and overall font styling */
+.root {
+    -fx-background-color: #e0f7fa; /* Light cyan background */
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px; /* Base font size */
+}
+
+/* Styling for the Bingo buttons */
+.bingo-button {
+    -fx-background-color: #4caf50; /* Green background for regular buttons */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 24px; /* Font size */
+    -fx-padding: 15; /* Padding for buttons */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 2); /* Shadow effect */
+}
+
+/* Styling for the marked cells */
+.marked-cell {
+    -fx-background-color: #ff5722; /* Red background for marked cells */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Bold text for marked cells */
+}
+
+/* Styling for the free space */
+.free-space {
+    -fx-background-color: #ffc107; /* Yellow background for free space */
+    -fx-text-fill: black; /* Black text color */
+    -fx-font-weight: bold; /* Bold text for free space */
+}
+
+/* Button hover effect */
+.bingo-button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 7, 0.5, 0, 3); /* Shadow effect on hover */
+}
+
+/* Button pressed effect */
+.bingo-button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green when pressed */
+}
+
+/* Control buttons styling */
+.control-button {
+    -fx-background-color: #2196F3; /* Blue background for control buttons */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 18px; /* Font size for control buttons */
+    -fx-padding: 10; /* Padding */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 2); /* Shadow effect */
+}
+
+/* Control button hover effect */
+.control-button:hover {
+    -fx-background-color: #1976D2; /* Darker blue on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 7, 0.5, 0, 3); /* Shadow effect on hover */
+}
+
+/* Control button pressed effect */
+.control-button:pressed {
+    -fx-background-color: #1565C0; /* Even darker blue when pressed */
+}
+
+/* Styling for the called number text */
+#called-number {
+    -fx-font-size: 22px; /* Increased font size */
+    -fx-font-weight: bold; /* Bold font */
+    -fx-text-fill: #333; /* Dark text color */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-padding: 10; /* Padding */
+    -fx-border-color: #4caf50; /* Green border */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-border-width: 2; /* Border width */
+}
+
+/* Additional styling for alert dialogs */
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Dark text for labels */
+}
+
+/* Global styling for VBoxes and HBoxes */
+.vbox, .hbox {
+    -fx-padding: 15; /* Padding for VBoxes and HBoxes */
+    -fx-spacing: 20; /* Spacing between children */
+}
+
+/* Styling for the main game board grid */
+.grid-pane {
+    -fx-background-color: #ffffff; /* White background for the grid */
+    -fx-padding: 15; /* Padding for the grid */
+    -fx-border-color: #4caf50; /* Green border */
+    -fx-border-radius: 10; /* Rounded corners */
+    -fx-border-width: 5; /* Border width */
+}
